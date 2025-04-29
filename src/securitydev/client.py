@@ -1,6 +1,7 @@
-import httpx
-from typing import Optional, Type
 from types import TracebackType
+from typing import Optional, Type
+
+import httpx
 
 from .namespaces.ip_intel import IpIntelNamespace
 

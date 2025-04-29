@@ -1,6 +1,7 @@
 """Pydantic models for the IP Intel API endpoints."""
 
-from typing import Optional, List
+from typing import List, Optional
+
 from pydantic import BaseModel, Field
 
 
@@ -42,7 +43,6 @@ class GeoIpLookupData(BaseModel):
     postal: Postal = Field(default_factory=Postal)
     registered_country: Country = Field(default_factory=Country)
     subdivisions: Optional[List[Subdivision]] = None
-
 
 
 class ReputationData(BaseModel):

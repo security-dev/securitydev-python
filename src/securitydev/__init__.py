@@ -5,9 +5,9 @@ Provides both synchronous (default) and asynchronous clients.
 
 __version__ = "1.0.0"
 
-from .client import SecurityClient  # Default Sync client
 from .async_client import AsyncSecurityClient  # Async client
-from .exceptions import SecurityDevError, SecurityDevApiError
+from .client import SecurityClient  # Default Sync client
+from .exceptions import SecurityDevApiError, SecurityDevError
 from .models import ip_intel  # Expose models namespace
 
 # Make primary classes and exceptions easily accessible

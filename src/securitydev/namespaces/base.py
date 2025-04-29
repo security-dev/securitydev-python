@@ -1,9 +1,10 @@
 # securitydev/namespaces/base.py
 """Base class for API namespaces, providing common functionality."""
 
-import httpx
 import http
 from typing import Union  # To type hint the client
+
+import httpx
 
 # Need to import the exception from the parent directory's exceptions module
 from ..exceptions import SecurityDevApiError

@@ -3,6 +3,8 @@ name = "securitydev"
 version = "1.0.0"
 description = "security.dev Python SDK"
 readme = "README.md"
+license = { text = "MIT" }
+keywords = ["security", "web"]
 authors = [
     { name = "Felipe R. de Almeida", email = "felipe@security.dev" }
 ]
@@ -15,9 +17,11 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Operating System :: OS Independent",
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Topic :: Internet",
+    "Topic :: Security",
     "Typing :: Typed",
 ]
 dependencies = [
@@ -25,6 +29,10 @@ dependencies = [
     "pydantic>=2.11.3",
 ]
 
+[project.urls]
+"Homepage" = "https://security.dev/"
+"Documentation" = "https://docs.security.dev/"
+"Repository" = "https://github.com/security-dev/securitydev-python"
 
 [build-system]
 requires = ["hatchling"]
@@ -34,3 +42,8 @@ build-backend = "hatchling.build"
 dev = [
     "ruff>=0.11.6",
 ]
+
+[tool.ruff]
+lint.select = ["E", "F", "I"]
+line-length = 88
+src = ["src", "test_project", "tests"]

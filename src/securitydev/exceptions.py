@@ -27,7 +27,3 @@ class SecurityDevApiError(SecurityDevError):
         super().__init__(
             f"API request to {request_url} failed with status {status_code}: {detail}"
         )
-
-
-# Other httpx exceptions like httpx.RequestError (connection error, timeout)
-# are not caught and wrapped by default, allowing users to handle them directly if needed.
