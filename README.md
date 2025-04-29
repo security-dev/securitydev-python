@@ -6,13 +6,10 @@ A modern Python client for the [security.dev API](https://docs.security.dev/), b
 
 ## Features
 
-*   Synchronous (`SecurityClient`) and Asynchronous (`AsyncSecurityClient`) interfaces.
-*   API endpoints grouped under namespaces (e.g., `client.ip_intel`).
-*   Modern implementation using `httpx`.
-*   Data validation using `pydantic` with safe nested attribute access.
+*   Synchronous and Asynchronous interfaces.
+*   Data validation using `pydantic`.
 *   Simple and intuitive interface.
-*   Type-hinted for a better developer experience.
-*   Clean error handling for API responses.
+*   Type-hinted.
 
 ## Installation
 
