@@ -1,4 +1,4 @@
-# security.dev Python Client (`securitydev`)
+# security.dev Python SDK
 
 [![PyPI version](https://badge.fury.io/py/securitydev.svg)](https://badge.fury.io/py/securitydev)
 

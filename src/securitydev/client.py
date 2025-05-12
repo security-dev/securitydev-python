@@ -4,6 +4,7 @@ from typing import Optional, Type
 import httpx
 
 from .namespaces.ip_intel import IpIntelNamespace
+from .namespaces.user_intel import UserIntelNamespace
 
 
 class SecurityClient:
@@ -44,8 +45,7 @@ class SecurityClient:
         # --- Initialize Namespaces ---
         # Pass the raw httpx client to the namespace
         self.ip_intel = IpIntelNamespace(self._client)
-        # In the future, add other namespaces here:
-        # self.user_intel = UserIntelNamespace(self._client)
+        self.user_intel = UserIntelNamespace(self._client)
         # self.email_intel = EmailIntelNamespace(self._client)
 
     def close(self) -> None:

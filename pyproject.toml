@@ -1,12 +1,12 @@
 [project]
 name = "securitydev"
-version = "1.0.1"
+version = "1.0.2"
 description = "security.dev Python SDK"
 readme = "README.md"
 license = { text = "MIT" }
 keywords = ["security", "web"]
 authors = [
-    { name = "Felipe R. de Almeida", email = "felipe@security.dev" }
+    { name = "Felipe R. de Almeida", email = "hello@security.dev" }
 ]
 requires-python = ">=3.9"
 classifiers = [

@@ -3,7 +3,8 @@ from typing import Optional, Type
 
 import httpx
 
-from .namespaces.async_ip_intel import AsyncIpIntelNamespace
+from .namespaces.ip_intel import AsyncIpIntelNamespace
+from .namespaces.user_intel import AsyncUserIntelNamespace
 
 
 class AsyncSecurityClient:
@@ -45,8 +46,7 @@ class AsyncSecurityClient:
         # --- Initialize Namespaces ---
         # Pass the raw async httpx client to the namespace
         self.ip_intel = AsyncIpIntelNamespace(self._client)
-        # In the future, add other async namespaces here:
-        # self.user_intel = AsyncUserIntelNamespace(self._client)
+        self.user_intel = AsyncUserIntelNamespace(self._client)
         # self.email_intel = AsyncEmailIntelNamespace(self._client)
 
     async def close(self) -> None:
