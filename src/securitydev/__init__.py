@@ -3,7 +3,7 @@ securitydev - A modern Python client for the security.dev API.
 Provides both synchronous (default) and asynchronous clients.
 """
 
-__version__ = "1.0.2"
+__version__ = "1.0.3"
 
 from .async_client import AsyncSecurityClient  # Async client
 from .client import SecurityClient  # Default Sync client
