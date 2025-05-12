@@ -1,6 +1,6 @@
 [project]
 name = "securitydev"
-version = "1.0.3"
+version = "1.0.4"
 description = "security.dev Python SDK"
 readme = "README.md"
 license = { text = "MIT" }
