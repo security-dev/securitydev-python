@@ -1,6 +1,6 @@
 [project]
 name = "securitydev"
-version = "1.0.4"
+version = "1.0.5"
 description = "security.dev Python SDK"
 readme = "README.md"
 license = { text = "MIT" }
@@ -26,7 +26,7 @@ classifiers = [
 ]
 dependencies = [
     "httpx>=0.28.1",
-    "pydantic>=2.11.3",
+    "pydantic>=2.8.2",
 ]
 
 [project.urls]
