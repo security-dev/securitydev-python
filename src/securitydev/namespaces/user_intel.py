@@ -1,7 +1,7 @@
 import httpx
 
-from src.securitydev.models.user_intel import EmailIntelResponse
-from src.securitydev.namespaces.base import BaseNamespace
+from ..models.user_intel import EmailIntelResponse
+from ..namespaces.base import BaseNamespace
 
 
 class UserIntelNamespace(BaseNamespace):
